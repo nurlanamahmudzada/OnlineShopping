@@ -144,7 +144,7 @@ namespace OnlineShopping
             operation = Operation.ADD;
             Validation();
             if (warning == true) return;
-            string path = Path.Combine(@"D:\C#Projects\LoginRegisterApp\Uploaded\", Path.GetFileName(openFileDialog1.FileName));
+            string path = Path.Combine(@"D:\C#Projects\OnlineShopping\Uploaded\", Path.GetFileName(openFileDialog1.FileName));
             File.Copy(openFileDialog1.FileName, path, true);
             Product product = new()
             {
@@ -220,7 +220,7 @@ namespace OnlineShopping
             if (data.Picture == openFileDialog1.FileName) { }
             else
             {
-                string path = Path.Combine(@"D:\C#Projects\LoginRegisterApp\Uploaded\", Path.GetFileName(openFileDialog1.FileName));
+                string path = Path.Combine(@"D:\C#Projects\OnlineShopping\Uploaded\", Path.GetFileName(openFileDialog1.FileName));
                 File.Copy(openFileDialog1.FileName, path, true);
                 data.Picture = path; 
             }
